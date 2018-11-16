@@ -61,18 +61,19 @@ func TestConnectPostgres(t *testing.T) {
 }
 
 
+*/
 
-//1
+//2
 // Literally testing connection to local hosted postgres instance
-func TestConnectPostgres(t *testing.T) {
+func TestWriteAccounts(t *testing.T) {
 
-	fmt.Println("TestConnectPostgres start ")
+	fmt.Println("TestWriteAccounts start ")
 
-	v, err := ConnectPostgres()
+	v, err := WriteAccounts()
 
 	if err != nil {
 		fmt.Println("******************************************************************")
-		fmt.Println("ClientABCIQueryTests error: ", err)
+		fmt.Println("WriteAccounts error: ", err)
 	}
 	
 	fmt.Println("******************************************************************")
@@ -84,10 +85,9 @@ func TestConnectPostgres(t *testing.T) {
         )
 	}
 
-	fmt.Println("TestClientABCIInfo finished ")
+	fmt.Println("TestWriteAccounts finished ")
 }
 
-*/
 
 
 //1
